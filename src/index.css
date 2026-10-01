@@ -288,8 +288,10 @@
 .hero-kenburns {
   animation: kenburns 22s ease-in-out infinite alternate;
   will-change: transform;
-  transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
   transform-origin: center 30%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 @keyframes heroScrollDot {
