@@ -376,22 +376,7 @@ export default defineConfig(({ mode }) => ({
         pure_funcs: mode === "production" ? ["console.log", "console.info", "console.debug"] : [],
       },
     },
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          // Framer-motion in its own deferred chunk
-          if (id.includes("node_modules/framer-motion")) return "vendor-framer";
-          // Radix UI — deferred with pages that use dialogs/forms
-          if (id.includes("node_modules/@radix-ui")) return "vendor-radix";
-          // Lucide icons — shared
-          if (id.includes("node_modules/lucide-react")) return "vendor-lucide";
-          // Embla carousel — used only on TrustedInvestors (deferred)
-          if (id.includes("node_modules/embla-carousel")) return "vendor-embla";
-          // All other node_modules in one vendor chunk (avoids circular dep warnings)
-          if (id.includes("node_modules/")) return "vendor";
-        },
-      },
-    },
+    rollupOptions: {},
     chunkSizeWarningLimit: 1000,
     sourcemap: false,
   },
