@@ -11,26 +11,21 @@ export function Hero() {
         style={{ isolation: "isolate" }}
       >
         {/* GPU-composited pure CSS Ken Burns container (Compositor-only transform, zero JS main-thread ticks) */}
-        <div className="hero-kenburns w-full h-full">
-          {/* Base photo: architectural towers, served locally with Unsplash fallback */}
+        <div className="hero-kenburns absolute inset-0 w-full h-full">
+          {/* Base photo: photo-1486406146926-c627a92ad1ab - Strictly zero signage, zero text, zero building names */}
           <picture className="w-full h-full block">
             <source
               type="image/webp"
-              srcSet="/images/hero-building.webp"
+              srcSet="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1280&q=80 1280w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80 1920w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80 2560w"
+              sizes="100vw"
             />
             <img
-              src="/images/hero-building.jpg"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80"
               alt="Low-angle upward view of architectural glass towers graded in dusk navy shadows with warm amber reflections"
               className="w-full h-full object-cover object-[center_30%] filter contrast-[1.15] brightness-[0.88] sepia-[0.15] saturate-[1.1] pointer-events-none select-none"
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              onError={(e) => {
-                const target = e.currentTarget;
-                if (!target.src.includes("unsplash")) {
-                  target.src = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80";
-                }
-              }}
             />
           </picture>
         </div>
