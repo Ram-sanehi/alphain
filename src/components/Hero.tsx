@@ -5,62 +5,27 @@ import { ArrowRight } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative w-full h-screen min-h-[700px] flex flex-col justify-between overflow-hidden bg-[#070B14]">
-      {/* Background: Signage-Free Low-Angle Glass Towers Graded to Warm Dusk/Gold */}
-      <div
-        className="absolute inset-0 z-0 overflow-hidden"
-        style={{ isolation: "isolate" }}
-      >
-        {/* GPU-composited pure CSS Ken Burns container (Compositor-only transform, zero JS main-thread ticks) */}
+      {/* Background: Architectural Glass Towers at Dusk */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* GPU-composited pure CSS Ken Burns container */}
         <div className="hero-kenburns absolute inset-0 w-full h-full">
-          {/* Base photo: photo-1486406146926-c627a92ad1ab - Strictly zero signage, zero text, zero building names */}
-          <picture className="w-full h-full block">
-            <source
-              type="image/webp"
-              srcSet="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1280&q=80 1280w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80 1920w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80 2560w"
-              sizes="100vw"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80"
-              alt="Low-angle upward view of architectural glass towers graded in dusk navy shadows with warm amber reflections"
-              className="w-full h-full object-cover object-[center_30%] filter contrast-[1.15] brightness-[0.88] sepia-[0.15] saturate-[1.1] pointer-events-none select-none"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-            />
-          </picture>
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80"
+            srcSet="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1280&q=80 1280w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80 1920w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80 2560w"
+            sizes="100vw"
+            alt="Low-angle upward view of architectural glass towers graded in dusk navy shadows with warm amber reflections"
+            className="w-full h-full object-cover object-[center_30%] pointer-events-none select-none"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            crossOrigin="anonymous"
+          />
         </div>
 
-        {/* Color Grade Layer 1: Warm Amber / Gold Dusk Lighting on Glass Facets (mix-blend-color-dodge) */}
-        <div
-          className="absolute inset-0 z-10 pointer-events-none mix-blend-color-dodge opacity-30"
-          style={{
-            background:
-              "linear-gradient(130deg, rgba(201,162,75,0) 0%, rgba(201,162,75,0.15) 35%, rgba(201,162,75,0.35) 75%, rgba(220,184,98,0.5) 100%)",
-          }}
-        />
-
-        {/* Color Grade Layer 2: Deep Navy Sky Multiplier (mix-blend-multiply) - deepens the sky toward brand #070B14 */}
-        <div
-          className="absolute inset-0 z-10 pointer-events-none mix-blend-multiply opacity-40"
-          style={{
-            background:
-              "linear-gradient(180deg, #070B14 0%, rgba(7,11,20,0.5) 45%, rgba(11,19,43,0.75) 100%)",
-          }}
-        />
-
-        {/* Directional Gradient Overlay: Darker on left to ensure high readability of headline */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070B14]/80 via-[#070B14]/40 to-transparent z-10 pointer-events-none" />
-
-        {/* Targeted Radial Contrast Envelope: Guarantees headline contrast */}
-        <div
-          className="absolute inset-0 z-10 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse at 25% 45%, rgba(7,11,20,0.55) 0%, rgba(7,11,20,0.15) 55%, transparent 75%)",
-          }}
-        />
-
-        {/* Darken Bottom 15%: Removes any ground-level structural clutter & blends cleanly into ticker */}
+        {/* Brand overlays: Balanced dark gradients ensuring crisp readability while architectural towers stay radiantly visible */}
+        <div className="absolute inset-0 bg-[#070B14]/40 z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070B14]/85 via-[#070B14]/45 to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-x-0 bottom-0 h-36 sm:h-44 bg-gradient-to-t from-[#070B14] via-[#070B14]/80 to-transparent z-10 pointer-events-none" />
       </div>
 
