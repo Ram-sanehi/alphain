@@ -13,9 +13,9 @@ import { initializeUtmTracking } from "@/utils/utmTracker";
 
 // Critical core pages imported directly (zero secondary chunk delay or suspense blank screen)
 import Index from "./pages/Index";
+import Contact from "./pages/Contact";
 
 // Deferred pages loaded dynamically
-const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
 const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));

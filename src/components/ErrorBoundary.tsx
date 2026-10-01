@@ -33,14 +33,9 @@ export class ErrorBoundary extends Component<Props, State> {
           <h1 className="font-serif text-3xl sm:text-4xl text-[#F5F1E8] mb-3">
             Alpha Investment Management
           </h1>
-          <p className="font-sans text-sm text-slate-400 max-w-md mb-4">
+          <p className="font-sans text-sm text-slate-400 max-w-md mb-8">
             An unexpected error occurred while loading this view. Please refresh the page to reconnect.
           </p>
-          {this.state.error?.message && (
-            <div className="font-mono text-xs text-amber-300/80 bg-black/40 border border-amber-500/20 rounded-lg px-4 py-2 max-w-lg mb-8 text-left overflow-auto">
-              {this.state.error.message}
-            </div>
-          )}
           <button
             onClick={() => window.location.reload()}
             className="px-6 py-3 rounded-xl bg-[#C9A24B] text-[#070B14] font-sans font-semibold text-xs uppercase tracking-wider hover:bg-[#DCB862] transition-colors"
