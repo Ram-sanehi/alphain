@@ -1,0 +1,53 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer yellow thin border -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#daa520" stroke-width="2"/>
+  
+  <!-- Circle background -->
+  <circle cx="100" cy="100" r="95" fill="#1e3a5f" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="bullGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Bull silhouette (simplified) -->
+  <g transform="translate(50, 60)">
+    <!-- Head -->
+    <ellipse cx="30" cy="20" rx="15" ry="18" fill="url(#bullGradient)"/>
+    
+    <!-- Left horn -->
+    <path d="M 20 8 Q 15 2 10 0" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Right horn -->
+    <path d="M 40 8 Q 45 2 50 0" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Snout -->
+    <ellipse cx="30" cy="32" rx="8" ry="6" fill="url(#bullGradient)"/>
+    
+    <!-- Body -->
+    <ellipse cx="30" cy="55" rx="22" ry="28" fill="url(#bullGradient)"/>
+    
+    <!-- Front left leg -->
+    <rect x="12" y="78" width="5" height="22" fill="url(#bullGradient)" rx="2"/>
+    
+    <!-- Front right leg -->
+    <rect x="33" y="78" width="5" height="22" fill="url(#bullGradient)" rx="2"/>
+    
+    <!-- Back left leg (slightly visible) -->
+    <rect x="8" y="80" width="4" height="18" fill="url(#bullGradient)" rx="2" opacity="0.7"/>
+    
+    <!-- Back right leg (slightly visible) -->
+    <rect x="38" y="80" width="4" height="18" fill="url(#bullGradient)" rx="2" opacity="0.7"/>
+    
+    <!-- Tail -->
+    <path d="M 50 50 Q 60 48 65 40" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- A.I.M Text -->
+  <g transform="translate(100, 130)" text-anchor="middle">
+    <text x="0" y="0" font-size="24" font-weight="bold" fill="#daa520" font-family="Arial, sans-serif" letter-spacing="2">A.I.M</text>
+  </g>
+</svg>

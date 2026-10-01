@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-ink: #070B14;
+    --bg-ivory: #F5F1E8;
+    --accent-gold: #C9A24B;
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #070B14;
+    color: #F8FAFC;
+  }
+
+  body {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  /* Lenis smooth scrolling rules */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+  /* Selection styling */
+  ::selection {
+    background-color: #C9A24B;
+    color: #070B14;
+  }
+
+  /* Focus ring aesthetics */
+  :focus-visible {
+    outline: 2px solid #C9A24B;
+    outline-offset: 3px;
+  }
+}
+
+/* Editorial hairline border utilities */
+.border-hairline-dark {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.border-hairline-light {
+  border: 1px solid rgba(7, 11, 20, 0.08);
+}
+
+.border-hairline-gold {
+  border: 1px solid rgba(201, 162, 75, 0.25);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

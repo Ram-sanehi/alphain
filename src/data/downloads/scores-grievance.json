@@ -1,0 +1,16 @@
+{
+  "documentId": "scores-grievance",
+  "title": "Investor Grievance Redressal Protocol & SCORES Matrix",
+  "subtitle": "Comprehensive 4-Tier Dispute Resolution Architecture, SCORES 2.0 Escalation & SMART ODR Mechanism",
+  "version": "v2024.4",
+  "effectiveDate": "September 2026",
+  "asOnDate": "September 30, 2026",
+  "reviewStatus": "draft - pending legal and compliance approval",
+  "cleanFileName": "Alpha-Investor-Grievance-Redressal-Protocol-v2024.4.pdf",
+  "category": "Statutory Compliance",
+  "regulationRefs": [
+    "SEBI Master Circular on Dispute Resolution SEBI/HO/OIAE/OIAE_IAD-1/P/CIR/2023/145 (SCORES 2.0 Timelines)",
+    "SEBI Circular SEBI/HO/OIAE/OIAE_IAD-1/P/CIR/2023/131 (Online Dispute Resolution Portal - SMART ODR)",
+    "Regulation 21 of SEBI (Investment Advisers) Regulations, 2013 (Redressal of Client Grievances)"
+  ]
+}

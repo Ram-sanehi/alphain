@@ -1,0 +1,16 @@
+{
+  "documentId": "risk-profile-form",
+  "title": "SEBI RIA Risk Profiling & Suitability Assessment Questionnaire",
+  "subtitle": "Institutional 10-Point Capital Suitability Assessment Framework under Regulation 16",
+  "version": "v2025.1",
+  "effectiveDate": "September 2026",
+  "reviewStatus": "draft - pending legal and compliance approval",
+  "cleanFileName": "Alpha-SEBI-RIA-Risk-Profiling-Questionnaire-v2025.1.pdf",
+  "category": "Client Onboarding",
+  "regulationRefs": [
+    "Regulation 16 of SEBI (Investment Advisers) Regulations, 2013 (Risk Profiling & Suitability Assessment)",
+    "Regulation 17 of SEBI (Investment Advisers) Regulations, 2013 (Suitability Standards)",
+    "SEBI Circular SEBI/HO/IMD/DF1/CIR/P/2020/182 on Client Risk Profiling Process"
+  ],
+  "statutoryCaveat": "Indicative profile based on your answers. Not an investment recommendation."
+}

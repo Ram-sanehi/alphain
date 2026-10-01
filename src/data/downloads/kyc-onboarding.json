@@ -1,0 +1,15 @@
+{
+  "documentId": "kyc-onboarding",
+  "title": "Client KYC & Fiduciary Mandate Registration Form",
+  "subtitle": "Central KYC (CKYC) Registry Form, Non-Custodial Banking Verification & Fiduciary Onboarding Mandate",
+  "version": "v2025.2",
+  "effectiveDate": "September 2026",
+  "reviewStatus": "draft - pending legal and compliance approval",
+  "cleanFileName": "Alpha-Client-KYC-Fiduciary-Mandate-v2025.2.pdf",
+  "category": "Client Onboarding",
+  "regulationRefs": [
+    "Regulation 16(1) of SEBI (Investment Advisers) Regulations, 2013 (Risk Profiling & KYC)",
+    "SEBI Master Circular for Investment Advisers SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2024/79",
+    "Prevention of Money Laundering (Maintenance of Records) Rules, 2005"
+  ]
+}

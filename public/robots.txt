@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alphaaim.in/sitemap.xml

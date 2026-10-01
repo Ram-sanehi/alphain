@@ -1,0 +1,21 @@
+{
+  "documentId": "tax-whitepaper",
+  "title": "Family Office Tax Harvesting & Capital Gains Shielding Whitepaper",
+  "subtitle": "Institutional Capital Gains Architecture, Section 54EC/54F Reinvestment Framework & Tax-Loss Harvesting Protocol for Indian High-Net-Worth Portfolios",
+  "version": "v2025.1",
+  "effectiveDate": "September 2026",
+  "assessmentYear": "AY 2027-28 (FY 2026-27)",
+  "asOnDate": "September 30, 2026",
+  "reviewStatus": "draft - pending legal and compliance approval",
+  "cleanFileName": "Alpha-Family-Office-Tax-Harvesting-Whitepaper-v2025.1.pdf",
+  "category": "Research & Whitepapers",
+  "regulationRefs": [
+    "Income-tax Act, 1961: Section 112A (Tax on Long-Term Capital Gains in Certain Cases)",
+    "Income-tax Act, 1961: Section 111A (Tax on Short-Term Capital Gains in Equity Shares)",
+    "Income-tax Act, 1961: Section 50AA (Special Provision for Specified Mutual Funds)",
+    "Income-tax Act, 1961: Section 54EC (Capital Gain Not to be Charged on Investment in Certain Bonds)",
+    "Income-tax Act, 1961: Section 54F (Capital Gain on Transfer of Certain Capital Assets)",
+    "Finance (No. 2) Act, 2024 Amendments (Rationalized Capital Gains Tax Slabs)"
+  ],
+  "taxCaution": "Tax rules change; confirm with a qualified tax professional."
+}
