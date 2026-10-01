@@ -89,14 +89,14 @@ function App() {
       <LanguageProvider>
         <TooltipProvider>
           <BrowserRouter>
-            <SEO />
-            <Toaster />
-            <Sonner />
             <ErrorBoundary>
+              <SEO />
+              <Toaster />
+              <Sonner />
               <AppRoutes />
+              <FloatingChat />
+              <CookieConsent />
             </ErrorBoundary>
-            <FloatingChat />
-            <CookieConsent />
           </BrowserRouter>
         </TooltipProvider>
       </LanguageProvider>
